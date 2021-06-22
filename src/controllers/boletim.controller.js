@@ -101,13 +101,13 @@ export default {
         pdf
           .create(data, {
             scale: 0.1,
-            height: '210mm',
-            width: '450mm',
+            height: '450mm',
+            width: '285mm',
             header: {
-              height: '10mm'
+              height: '0mm'
             },
             footer: {
-              height: '8mm'
+              height: '0mm'
             }
           })
           .toFile(path.join('storage', filename + '.pdf'), function (
